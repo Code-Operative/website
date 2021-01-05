@@ -97,3 +97,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+## Care 
+- data are use to add information to the pages e.g. new member, project, funding,... 
+- blog post are written in markdown in the blog-pages folder
