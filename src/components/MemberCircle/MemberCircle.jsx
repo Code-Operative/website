@@ -1,11 +1,11 @@
 import React from 'react';
 import style from './../../style/components/member.module.css';
 
-const Member = () => {
-
+const Member = (props) => {
+    const { name } = props;
     return (
         <div className={style.circleContainer}>
-            this is one circle
+            <h1>{name}</h1>
         </div>
     );
 };
