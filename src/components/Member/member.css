@@ -1,0 +1,29 @@
+.circleContainer {
+  border-radius: 301px;
+  height: 301px;
+  width: 301px;
+  margin: 70px;
+  border: 4px solid #9F109A;
+}
+
+.memberText {
+  width: 254px;
+  height: 254px;
+  border: 2px solid #9F109A;
+  border-radius: 20px;
+  margin: 0 auto;
+  color: #F8F8F8;
+  font-size: 16px;
+}
+
+.memberText_title{
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1280px) {
+  .circleContainer {
+    border-radius: 209px;
+    height: 209px;
+    width: 209px;
+  }
+}
