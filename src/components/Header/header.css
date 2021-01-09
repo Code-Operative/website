@@ -1,0 +1,18 @@
+.headerContainer{
+  display: flex;
+  justify-content: space-between;
+  padding:30px;
+  background: transparent linear-gradient(180deg, #4D4444 0%, #0F0E0E 100%) 0% 0% no-repeat padding-box;
+  padding: auto;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  margin: 0 60px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
