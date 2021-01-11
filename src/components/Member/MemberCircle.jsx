@@ -23,11 +23,9 @@ const Member = (prop) => {
 
 	const image = data.allFile.edges.find(n => n.node.publicURL.includes(imageURL));
 
-	//ToDo: error trapping when image is undefined 
-
 	return (
 		<div >
-			<img className="circleContainer" src={image.node.publicURL} />
+			{image !== 'undefined' && <img className="circleContainer" src={image.node.publicURL} />}
 		</div>
 	);
 };

@@ -21,11 +21,18 @@ export default function Project(props) {
 
   const image = data.allFile.edges.find(n => n.node.publicURL.includes(imageURL));
 
-  const projectComponentStyle = {
-    width: "100%",
-    height: "400px",
-    backgroundImage: 'url(' + image.node.publicURL + ')'
-  };
+  if (typeof image !== 'undefined') {
+    const projectComponentStyle = {
+      width: "100%",
+      height: "400px",
+      backgroundImage: 'url(' + image.node.publicURL + ')'
+    };
+  } else {
+    const projectComponentStyle = {
+      width: "100%",
+      height: "400px",
+    };
+  }
 
   return (
     <React.Fragment>
