@@ -6,11 +6,11 @@ import "./layout.css";
 
 const Layout = ({ children }) => {
   return (
-    <React.Fragment>
+    <div className="layout">
       <Header />
       <main>{children}</main>
       <Footer />
-    </React.Fragment>
+    </div>
   )
 };
 
