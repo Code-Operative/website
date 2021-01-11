@@ -5,7 +5,7 @@ export const memberlist = [
 		description: `Proficient in C# with over 15 years experience in the industry working with telecoms, banking, utilities and the public sector.`,
 	},
 	{
-		image: 'header',
+		image: 'hansen',
 		title: 'Hansen Salim - Co-Owner - Developer - Strategist',
 		description: `Has 7 years of experience building solutions for SME's, spending the last 3 pursuing his PhD in smart systems.`,
 	},

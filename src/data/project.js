@@ -5,7 +5,7 @@ export const projectsList = [
 	},
 	{
 		name: 'Twine',
-		image: 'header'
+		image: 'lalal'
 	}
 
 ];

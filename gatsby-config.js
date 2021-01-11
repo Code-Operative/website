@@ -21,6 +21,14 @@ module.exports = {
         path: `${__dirname}/src/blog-pages`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json-data`,
+        path: `${__dirname}/src/data`,
+      },
+    },
     `gatsby-transformer-remark`,
+    `gatsby-transformer-json`,
   ]
 }
