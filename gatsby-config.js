@@ -32,3 +32,7 @@ module.exports = {
     `gatsby-transformer-json`,
   ]
 }
+
+module.exports = {
+  pathPrefix: "/reponame",
+}
