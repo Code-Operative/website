@@ -1,0 +1,62 @@
+.textContainer {
+  text-align: left;
+  width: 90%;
+  margin: 30px auto;
+
+}
+
+.title{
+  font-size: 34px;
+  margin-bottom: 43px;
+}
+
+.content {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.StatsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.StatBoxContainer{
+  background: transparent linear-gradient(180deg, #E11272 0%, #710939 100%);
+  border-radius: 50px;
+  width: 435px;
+  height: 329px;
+  text-align: center;
+}
+
+.StatBoxStat{
+  margin: 92px;
+  font-size: 80px;
+}
+
+.StatBoxLabel{
+  margin: 20px;
+  font-size: 50px;
+}
+
+.PartnerContainer{
+  background: transparent linear-gradient(180deg, #9F109A 0%, #50084D 100%);
+  border-radius: 50px;
+  text-align: center;
+}
+
+.PartnerContainerInner {
+  position: relative;
+  width: 435px;
+  height: 329px;
+}
+
+.PartnerText {
+  font-size: 80px;
+  line-height: 122px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -22,14 +22,29 @@ font-kerning: normal;
 font-feature-settings: "kern", "liga", "clig", "calt"; */
 }
 
+main {
+    min-height: 75vh;
+}
+
 .memberOuterContainer{
     margin: 0 auto;
     text-align: center;
-    width: 80%;
+    width: 1347px;
+    min-height: 85vh;
     padding: 40px;
 }
 
 .membersContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+.memberGuideButton {
+    max-width: 170px;
+    border: 2px solid #9F109A;
+    border-radius: 20px;
+    margin: 42px auto;
+    padding: 10px 35px;
+    font-size: 16px;
 }
