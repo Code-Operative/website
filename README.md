@@ -98,6 +98,13 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-## Care 
-- data are use to add information to the pages e.g. new member, project, funding,... 
+## Updating the website
+- in data are js objects that is imported to add information to the pages e.g. new member, project, funding,... 
 - blog post are written in markdown in the blog-pages folder
+
+## Stying structure 
+- components have their own css files 
+- pages have css modules found in the style folder 
+
+## Todos
+- when member images is undefined, the site will crash, so need error trapping 
