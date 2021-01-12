@@ -12,17 +12,21 @@ export default function MemberPage() {
 			<div className="memberOuterContainer">
 				<div className="membersContainer">
 					<h1>{memberlist.name}</h1>
-					{memberlist.map((member) => {
-						return (
-							<div>
-								<MemberCircle imageURL={member.image} />
-								<MemberText
-									title={member.title}
-									description={member.description}
-								/>
-							</div>
-						)
-					})}
+
+
+					{memberlist.map((member) => ({ sort: Math.random(), value: member }))
+						.sort((member, b) => member.sort - b.sort)
+						.map((member) => {
+							return (
+								<div>
+									<MemberCircle imageURL={member.value.image} />
+									<MemberText
+										title={member.value.title}
+										description={member.value.description}
+									/>
+								</div>
+							)
+						})}
 				</div>
 				<div className="memberGuideButton">Members Guide</div>
 			</div>
