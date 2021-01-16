@@ -25,7 +25,7 @@ const Member = (prop) => {
 
 	return (
 		<div >
-			{image !== 'undefined' && <img className="circleContainer" src={image.node.publicURL} />}
+			{image ? <img className="circleContainer" alt="a member of Code-Operative" src={image.node.publicURL} /> : <img className="circleContainer" alt="a member of Code-Operative" />}
 		</div>
 	);
 };
