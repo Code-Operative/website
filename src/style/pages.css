@@ -48,3 +48,17 @@ main {
     padding: 10px 35px;
     font-size: 16px;
 }
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    margin: 165px 0 20px 0; 
+}
+
+.contactButtonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 600px;
+    margin: 0 auto;
+}
