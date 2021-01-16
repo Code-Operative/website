@@ -106,5 +106,11 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - components have their own css files 
 - pages have css modules found in the style folder 
 
-## Todos
-- when member images is undefined, the site will crash, so need error trapping 
+## Blog
+- to write a blog post, go to src/blog-pages and insert a new .md file
+- in the frontmatter:
+  - the FeaturedImage will be the image that you want to feature on the blog page
+  - the image should be included in the same folder
+  - slug is the path where you want the blog page to be found e.g. blog/my-blog
+
+  
