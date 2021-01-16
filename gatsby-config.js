@@ -6,6 +6,7 @@
 
 module.exports = {
   /* Your site config here */
+  // pathPrefix: "/website",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -29,10 +30,8 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
   ]
-}
-
-module.exports = {
-  pathPrefix: "/reponame",
 }
