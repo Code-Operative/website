@@ -12,7 +12,9 @@ export default function ProjectPage({ data }) {
         return (
           <Project
             name={project.name}
+            description={project.description}
             imageURL={project.image}
+            color={project.color}
           />
         )
       })}
