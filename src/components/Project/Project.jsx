@@ -4,7 +4,7 @@ import Carousel from './carousel';
 
 export default function Project(props) {
 
-  const { imageURL, name, description, color } = props;
+  const { desktopImageURL, mobileImageURL, name, description, color } = props;
 
   const data = useStaticQuery(graphql`
     {
@@ -20,14 +20,25 @@ export default function Project(props) {
     }
   `)
 
-  const image = data.allFile.edges.find(n => n.node.publicURL.includes(imageURL));
-  console.log(image);
-  // if (image == undefined) {
-  // const projectComponentStyle = {
-  //   width: "100%",
-  //   height: "400px",
-  //   backgroundImage: 'url(' + image.node.publicURL + ')'
-  // };
+  const desktopImage = data.allFile.edges.find(n => n.node.publicURL.includes(desktopImageURL));
+  const mobileImage = data.allFile.edges.find(n => n.node.publicURL.includes(mobileImageURL));
+  // inline styling is used to prevent desktop image to render in mobile (https://medium.com/better-programming/css-how-css-display-none-affects-images-on-page-load-dbdf1aaea820)
+  // if (image !== undefined) {
+  // console.log(mobileImage);
+  const projectComponentStyleDesktop = {
+    // width: "100%",
+    height: "100px",
+    backgroundImage: 'url(' + mobileImage.node.publicURL + ')',
+    backgroundSize: '100% 100%',
+    backgroundRepeat: 'no-repeat'
+  };
+  const projectComponentStyleMobile = {
+    // width: "100%",
+    height: "100px",
+    backgroundImage: 'url(' + mobileImage.node.publicURL + ')',
+    backgroundSize: '100% 100%',
+    backgroundRepeat: 'no-repeat'
+  };
   // } else {
   //   const projectComponentStyle = {
   //     width: "100%",
@@ -37,10 +48,9 @@ export default function Project(props) {
 
   return (
     <React.Fragment>
-      {/* <div style={projectComponentStyle}>{name}</div>
-      {image ? <img alt="A code-operative project" src={image.node.publicURL} /> : <img alt="A code-operative project" />} */}
-      <Carousel>
-        {image && <img src={image.node.publicURL} alt="A code-operative project" />}
+      <div className="project__mobile">
+        {mobileImage && <div style={projectComponentStyleMobile}>{name}</div>}
+        {/* {mobileImage && <img src={mobileImage.node.publicURL} className="image__project--mobile" alt="A code-operative project" />} */}
         <div className="projectDescriptonContainer" style={{ backgroundColor: color }}>
           <div className="projectDescriptonContainer_wrapper">
             <div className="projectDescriptonTitle">{name}</div>
@@ -51,7 +61,23 @@ export default function Project(props) {
             })}
           </div>
         </div>
-      </Carousel>
+      </div>
+      <div className="project__desktop">
+        <Carousel>
+          {desktopImage && <div style={projectComponentStyleDesktop}>{name}</div>}
+          {/* {desktopImage && <img src={desktopImage.node.publicURL} className="image__project--desktop" alt="A code-operative project" />} */}
+          <div className="projectDescriptonContainer" style={{ backgroundColor: color }}>
+            <div className="projectDescriptonContainer_wrapper">
+              <div className="projectDescriptonTitle">{name}</div>
+              {description.map((paragraph) => {
+                return (
+                  <div className="projectDescripton">{paragraph}</div>
+                )
+              })}
+            </div>
+          </div>
+        </Carousel>
+      </div>
     </React.Fragment>
 
   )

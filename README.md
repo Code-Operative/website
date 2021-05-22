@@ -101,6 +101,11 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## Updating the website
 - in data are js objects that is imported to add information to the pages e.g. new member, project, funding,... 
 - blog post are written in markdown in the blog-pages folder
+- project 
+  - title
+  - description 
+  - image 
+  - background color for text 
 
 ## Stying structure 
 - components have their own css files 

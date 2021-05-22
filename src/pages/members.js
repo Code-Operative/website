@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/Layout/layout';
-import Header from '../components/Header/header';
 import MemberCircle from '../components/Member/MemberCircle';
 import MemberText from '../components/Member/MemberText';
 import { memberlist } from '../data/member';

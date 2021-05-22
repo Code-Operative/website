@@ -50,41 +50,42 @@ const Header = () => {
 					<div className="mobile_menu--section">
 						<div className="mobile_menu--content">
 							<img src={home} />
-							<div className="mobile_menu--text">Home</div>
+							<Link to="/" className="mobile_menu--text"> Home</Link>
 						</div>
 					</div>
 					<div className="mobile_menu--section">
 						<div className="mobile_menu--content">
 							<img src={work} />
-							<div className="mobile_menu--text"> Work </div>
+							<Link to="/projects" className="mobile_menu--text"> Work </Link>
 						</div>
 					</div>
 					<div className="mobile_menu--section">
 						<div className="mobile_menu--content">
 							<img src={member} />
-							<div className="mobile_menu--text"> Members </div>
+							<Link to="/members" className="mobile_menu--text"> Members </Link>
 						</div>
 					</div>
 					<div className="mobile_menu--section">
 						<div className="mobile_menu--content">
 							<img src={contact} />
-							<div className="mobile_menu--text"> Contact </div>
+							<Link to="/contact" className="mobile_menu--text"> Contact </Link>
 						</div>
 					</div>
 					<div className="mobile_menu--section">
 						<div className="mobile_menu--content">
 							<img src={blog} />
-							<div className="mobile_menu--text"> Blog </div>
+							<Link to="/blog" className="mobile_menu--text"> Blog </Link>
 						</div>
 					</div>
 					<div className="mobile_menu--section">
 						<div className="mobile_menu--content">
 							<img src={join} />
-							<div className="mobile_menu--text"> Join Us </div>
+							<Link to="/join" className="mobile_menu--text"> Join Us </Link>
 						</div>
 					</div>
 				</div>
 			}
+			<div className="header_empty"></div>
 		</div>
 	);
 };

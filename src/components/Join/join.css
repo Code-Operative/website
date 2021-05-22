@@ -1,0 +1,30 @@
+.joinform {
+  border: 3px solid #E11272;
+  border-radius: 20px;
+  width: 559px;
+  height: 613px;
+  margin: 0 auto;
+}
+
+.joinInput {
+  border: 2px solid #F8F8F8;
+  border-radius: 20px;
+  width: 461px;
+  height: 49px;
+  margin: 20px 0;
+  background: transparent;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.joinSend{
+  border: 2px solid #9F109A;
+  border-radius: 40px;
+  width: 155px;
+  height: 48px;
+  margin: 23px;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+}

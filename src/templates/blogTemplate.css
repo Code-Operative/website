@@ -1,0 +1,9 @@
+.blog-post-container {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+p {
+  text-align: left;
+}

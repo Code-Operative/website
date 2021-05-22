@@ -2,18 +2,20 @@ import React from 'react';
 import { Link } from "gatsby";
 
 const ContactButton = (props) => {
-  const { url, text } = props;
+  const { url, text, toggleFAQ } = props;
 
   return (
     <React.Fragment>
-      <Link to={url}>
+      <a href={url} target="_blank" rel="noopener noreferrer">
         <button
           className="ContactButton"
           type="button"
+          onClick={() => toggleFAQ()}
+          onBlur={() => toggleFAQ()}
         >
           {text}
         </button>
-      </Link>
+      </a>
     </React.Fragment>
   )
 }

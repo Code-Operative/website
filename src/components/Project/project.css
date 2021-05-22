@@ -63,7 +63,7 @@
 }
 
 .projectDescriptonContainer_wrapper {
-  width: 90%;
+  width: 80%;
   margin: 0px auto;
   padding: 20px 0;
 }
@@ -76,4 +76,13 @@
   text-align: left;
     font-size: 12px;
     margin: 12px 0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .project__desktop {
+    display: none;
+  }
+
+
 }

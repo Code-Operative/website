@@ -7,14 +7,14 @@ const BlogMoreButton = (props) => {
 
   return (
     <React.Fragment>
-      <Link to={url}>
-        <button
-          className="BlogMoreButton"
-          type="button"
-        >
+      <button
+        className="BlogMoreButton"
+        type="button"
+      >
+        <Link to={url}>
           Read More
+        </Link>
       </button>
-      </Link>
     </React.Fragment>
   )
 }

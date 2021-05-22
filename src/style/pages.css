@@ -22,9 +22,25 @@ font-kerning: normal;
 font-feature-settings: "kern", "liga", "clig", "calt"; */
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 main {
     min-height: 75vh;
 }
+
+input[type="button"]
+{
+    border: none;
+    outline:none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
 
 .memberOuterContainer{
     margin: 0 auto;
@@ -55,6 +71,11 @@ main {
     margin: 165px 0 20px 0; 
 }
 
+.contact_map {
+    width: 663px;
+    height: 552px;
+}
+
 .contactButtonContainer {
     display: flex;
     flex-wrap: wrap;
@@ -62,3 +83,49 @@ main {
     width: 600px;
     margin: 0 auto;
 }
+
+.joinContainer {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.joinTitle {
+    font-size: 70px;
+    line-height: 114px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .contact_map {
+        width: 442px;
+        height: 368px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .memberOuterContainer {
+        max-width: 300px;
+        padding: 0;
+    }
+
+    .contactContainer {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 320px;
+    }
+
+    .contact_map {
+        max-width: 300px;
+        height: 270px;
+        margin: 20px 10px;
+    }
+
+    .contactButtonContainer{
+        display: block;
+        max-width: 320px;
+        text-align: center;
+    }
+  }

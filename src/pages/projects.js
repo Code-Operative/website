@@ -13,7 +13,8 @@ export default function ProjectPage({ data }) {
           <Project
             name={project.name}
             description={project.description}
-            imageURL={project.image}
+            desktopImageURL={project.desktop_image}
+            mobileImageURL={project.mobile_image}
             color={project.color}
           />
         )

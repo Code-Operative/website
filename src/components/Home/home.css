@@ -2,7 +2,6 @@
   text-align: left;
   width: 90%;
   margin: 30px auto;
-
 }
 
 .title{
@@ -31,7 +30,8 @@
 }
 
 .StatBoxStat{
-  margin: 92px;
+  line-height: 122;
+  margin-top: 92px;
   font-size: 80px;
 }
 
@@ -59,4 +59,67 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1280px) {
+
+  .title{
+    font-size: 24px;
+  }
+
+  .StatsContainer {
+    width: 100%;
+  }
+  
+  .StatBoxContainer{
+    width: 292px;
+    height: 220px;
+  }
+
+  .StatBoxStat{
+    font-size: 52px;
+    line-height: 50px;
+    margin-top: 50px;
+  }
+
+  .StatBoxLabel{
+    font-size: 33px;
+  }
+
+  .PartnerContainerInner {
+    width: 291px;
+    height: 220px;
+  }
+
+  .PartnerText {
+    font-size: 53px;
+    line-height: 81px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .title{
+    margin-bottom: 0;
+  }
+
+  .StatsContainer {
+    display: block;
+  }
+
+  .StatBoxContainer{
+    border: 3px solid #E11272;
+    margin: 100px auto;
+    background: transparent;
+  }
+
+  .PartnerContainer{
+    border: 3px solid #E11272;
+    margin: 100px auto;
+    background: transparent;
+    width: 291px;
+    height: 220px;
+  }
+
+
 }
